@@ -1,0 +1,835 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "4MOSFET_to_positive"
+Date "2021-12-04"
+Rev "V1.0"
+Comp "Smart Open Lab / University of Extremadura"
+Comment1 "Author: @AGordiGuerrero"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:BUZ11 Q5
+U 1 1 61AA59E9
+P 4750 2150
+F 0 "Q5" H 4955 2196 50  0000 L CNN
+F 1 "BUZ11" H 4955 2105 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 5000 2075 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/BUZ11.pdf" H 4750 2150 50  0001 L CNN
+	1    4750 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 61AA7A66
+P 3550 2100
+F 0 "R3" H 3480 2054 50  0000 R CNN
+F 1 "1k" H 3480 2145 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3480 2100 50  0001 C CNN
+F 3 "~" H 3550 2100 50  0001 C CNN
+	1    3550 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 61AA7EE7
+P 4250 1900
+F 0 "R5" H 4180 1854 50  0000 R CNN
+F 1 "1k" H 4180 1945 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4180 1900 50  0001 C CNN
+F 3 "~" H 4250 1900 50  0001 C CNN
+	1    4250 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4007 D1
+U 1 1 61AA8A2F
+P 4650 2850
+F 0 "D1" V 4604 2930 50  0000 L CNN
+F 1 "1N4007" V 4695 2930 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4650 2675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4650 2850 50  0001 C CNN
+	1    4650 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 61AAA9F3
+P 5250 2600
+F 0 "J3" H 5330 2592 50  0000 L CNN
+F 1 "Conn_01x02" H 5330 2501 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 5250 2600 50  0001 C CNN
+F 3 "~" H 5250 2600 50  0001 C CNN
+	1    5250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 61AACFEC
+P 1350 3250
+F 0 "J2" H 1268 2825 50  0000 C CNN
+F 1 "Conn_01x05" H 1268 2916 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1350 3250 50  0001 C CNN
+F 3 "~" H 1350 3250 50  0001 C CNN
+	1    1350 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 61AAEB08
+P 4350 3050
+F 0 "#PWR06" H 4350 2800 50  0001 C CNN
+F 1 "GND" H 4355 2877 50  0000 C CNN
+F 2 "" H 4350 3050 50  0001 C CNN
+F 3 "" H 4350 3050 50  0001 C CNN
+	1    4350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 61ABBC8D
+P 1350 2450
+F 0 "J1" H 1268 2125 50  0000 C CNN
+F 1 "Conn_01x02" H 1268 2216 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 1350 2450 50  0001 C CNN
+F 3 "~" H 1350 2450 50  0001 C CNN
+	1    1350 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 61ABC865
+P 1800 2500
+F 0 "#PWR03" H 1800 2250 50  0001 C CNN
+F 1 "GND" H 1805 2327 50  0000 C CNN
+F 2 "" H 1800 2500 50  0001 C CNN
+F 3 "" H 1800 2500 50  0001 C CNN
+	1    1800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR04
+U 1 1 61ABD044
+P 4250 1400
+F 0 "#PWR04" H 4250 1250 50  0001 C CNN
+F 1 "+12V" H 4265 1573 50  0000 C CNN
+F 2 "" H 4250 1400 50  0001 C CNN
+F 3 "" H 4250 1400 50  0001 C CNN
+	1    4250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2350 1800 2350
+Wire Wire Line
+	5050 2700 5050 3050
+Wire Wire Line
+	4650 3000 4650 3050
+Connection ~ 4650 3050
+Wire Wire Line
+	4650 2700 4650 2600
+Wire Wire Line
+	4250 3050 4350 3050
+Connection ~ 4350 3050
+$Comp
+L Transistor_BJT:2N3904 Q3
+U 1 1 61AC9C40
+P 4150 2400
+F 0 "Q3" H 4340 2446 50  0000 L CNN
+F 1 "2N3904" H 4340 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4350 2325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4150 2400 50  0001 L CNN
+	1    4150 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61AD190B
+P 3050 2600
+F 0 "R1" V 3257 2600 50  0000 C CNN
+F 1 "10k" V 3166 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2980 2600 50  0001 C CNN
+F 3 "~" H 3050 2600 50  0001 C CNN
+	1    3050 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 61AD1F9D
+P 3450 2600
+F 0 "Q1" H 3640 2646 50  0000 L CNN
+F 1 "2N3904" H 3640 2555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3650 2525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3450 2600 50  0001 L CNN
+	1    3450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 61ADD6C2
+P 1950 2350
+F 0 "#FLG01" H 1950 2425 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 2523 50  0000 C CNN
+F 2 "" H 1950 2350 50  0001 C CNN
+F 3 "~" H 1950 2350 50  0001 C CNN
+	1    1950 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 3050 4350 3050
+Text GLabel 1550 3350 2    50   Input ~ 0
+IN1
+Text GLabel 1550 3250 2    50   Input ~ 0
+IN2
+Text GLabel 1550 3150 2    50   Input ~ 0
+IN3
+Text GLabel 1550 3050 2    50   Input ~ 0
+IN4
+$Comp
+L power:GND #PWR01
+U 1 1 61AE2067
+P 1650 3500
+F 0 "#PWR01" H 1650 3250 50  0001 C CNN
+F 1 "GND" H 1655 3327 50  0000 C CNN
+F 2 "" H 1650 3500 50  0001 C CNN
+F 3 "" H 1650 3500 50  0001 C CNN
+	1    1650 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3450 1650 3450
+Wire Wire Line
+	1650 3450 1650 3500
+Text GLabel 2800 2600 0    50   Input ~ 0
+IN1
+Wire Wire Line
+	2800 2600 2900 2600
+Wire Wire Line
+	3200 2600 3250 2600
+Wire Wire Line
+	4550 2150 4250 2150
+Wire Wire Line
+	4250 2150 4250 2200
+Wire Wire Line
+	3550 2250 3550 2400
+Connection ~ 3550 2400
+Wire Wire Line
+	4650 2600 4850 2600
+Wire Wire Line
+	3550 2800 3550 3050
+Wire Wire Line
+	3550 3050 4250 3050
+Connection ~ 4250 3050
+Wire Wire Line
+	4250 2600 4250 3050
+Wire Wire Line
+	4850 2600 4850 2350
+Connection ~ 4850 2600
+Wire Wire Line
+	4850 2600 5050 2600
+Wire Wire Line
+	3550 2400 3950 2400
+Wire Wire Line
+	1550 2450 1800 2450
+Wire Wire Line
+	1800 2450 1800 2500
+Wire Wire Line
+	3550 1650 4250 1650
+Wire Wire Line
+	4250 1650 4250 1750
+Wire Wire Line
+	3550 1650 3550 1950
+Connection ~ 4250 1650
+Wire Wire Line
+	4250 2050 4250 2150
+Connection ~ 4250 2150
+Wire Wire Line
+	4250 1650 4850 1650
+Wire Wire Line
+	4850 1650 4850 1950
+Wire Wire Line
+	4250 1400 4250 1650
+$Comp
+L power:+12V #PWR02
+U 1 1 61ABF2E1
+P 1800 2350
+F 0 "#PWR02" H 1800 2200 50  0001 C CNN
+F 1 "+12V" H 1815 2523 50  0000 C CNN
+F 2 "" H 1800 2350 50  0001 C CNN
+F 3 "" H 1800 2350 50  0001 C CNN
+	1    1800 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2350 1800 2350
+Connection ~ 1800 2350
+$Comp
+L Transistor_FET:BUZ11 Q6
+U 1 1 61AD8E84
+P 4750 4300
+F 0 "Q6" H 4955 4346 50  0000 L CNN
+F 1 "BUZ11" H 4955 4255 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 5000 4225 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/BUZ11.pdf" H 4750 4300 50  0001 L CNN
+	1    4750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 61AD8E8A
+P 3550 4250
+F 0 "R4" H 3480 4204 50  0000 R CNN
+F 1 "1k" H 3480 4295 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3480 4250 50  0001 C CNN
+F 3 "~" H 3550 4250 50  0001 C CNN
+	1    3550 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 61AD8E90
+P 4250 4050
+F 0 "R6" H 4180 4004 50  0000 R CNN
+F 1 "1k" H 4180 4095 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4180 4050 50  0001 C CNN
+F 3 "~" H 4250 4050 50  0001 C CNN
+	1    4250 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4007 D2
+U 1 1 61AD8E96
+P 4650 5000
+F 0 "D2" V 4604 5080 50  0000 L CNN
+F 1 "1N4007" V 4695 5080 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4650 4825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4650 5000 50  0001 C CNN
+	1    4650 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 61AD8E9C
+P 5250 4750
+F 0 "J4" H 5330 4742 50  0000 L CNN
+F 1 "Conn_01x02" H 5330 4651 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 5250 4750 50  0001 C CNN
+F 3 "~" H 5250 4750 50  0001 C CNN
+	1    5250 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 61AD8EA2
+P 4350 5200
+F 0 "#PWR07" H 4350 4950 50  0001 C CNN
+F 1 "GND" H 4355 5027 50  0000 C CNN
+F 2 "" H 4350 5200 50  0001 C CNN
+F 3 "" H 4350 5200 50  0001 C CNN
+	1    4350 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR05
+U 1 1 61AD8EA8
+P 4250 3550
+F 0 "#PWR05" H 4250 3400 50  0001 C CNN
+F 1 "+12V" H 4265 3723 50  0000 C CNN
+F 2 "" H 4250 3550 50  0001 C CNN
+F 3 "" H 4250 3550 50  0001 C CNN
+	1    4250 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4850 5050 5200
+Wire Wire Line
+	4650 5150 4650 5200
+Connection ~ 4650 5200
+Wire Wire Line
+	4650 4850 4650 4750
+Wire Wire Line
+	4250 5200 4350 5200
+Connection ~ 4350 5200
+$Comp
+L Transistor_BJT:2N3904 Q4
+U 1 1 61AD8EB5
+P 4150 4550
+F 0 "Q4" H 4340 4596 50  0000 L CNN
+F 1 "2N3904" H 4340 4505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4350 4475 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4150 4550 50  0001 L CNN
+	1    4150 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61AD8EBB
+P 3050 4750
+F 0 "R2" V 3257 4750 50  0000 C CNN
+F 1 "10k" V 3166 4750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2980 4750 50  0001 C CNN
+F 3 "~" H 3050 4750 50  0001 C CNN
+	1    3050 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q2
+U 1 1 61AD8EC1
+P 3450 4750
+F 0 "Q2" H 3640 4796 50  0000 L CNN
+F 1 "2N3904" H 3640 4705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3650 4675 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3450 4750 50  0001 L CNN
+	1    3450 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 5200 4350 5200
+Text GLabel 2800 4750 0    50   Input ~ 0
+IN2
+Wire Wire Line
+	2800 4750 2900 4750
+Wire Wire Line
+	3200 4750 3250 4750
+Wire Wire Line
+	4550 4300 4250 4300
+Wire Wire Line
+	4250 4300 4250 4350
+Wire Wire Line
+	3550 4400 3550 4550
+Connection ~ 3550 4550
+Wire Wire Line
+	4650 4750 4850 4750
+Wire Wire Line
+	3550 4950 3550 5200
+Wire Wire Line
+	3550 5200 4250 5200
+Connection ~ 4250 5200
+Wire Wire Line
+	4250 4750 4250 5200
+Wire Wire Line
+	4850 4750 4850 4500
+Connection ~ 4850 4750
+Wire Wire Line
+	4850 4750 5050 4750
+Wire Wire Line
+	3550 4550 3950 4550
+Wire Wire Line
+	3550 3800 4250 3800
+Wire Wire Line
+	4250 3800 4250 3900
+Wire Wire Line
+	3550 3800 3550 4100
+Connection ~ 4250 3800
+Wire Wire Line
+	4250 4200 4250 4300
+Connection ~ 4250 4300
+Wire Wire Line
+	4250 3800 4850 3800
+Wire Wire Line
+	4850 3800 4850 4100
+Wire Wire Line
+	4250 3550 4250 3800
+$Comp
+L Transistor_FET:BUZ11 Q11
+U 1 1 61AFE0A7
+P 8050 2150
+F 0 "Q11" H 8255 2196 50  0000 L CNN
+F 1 "BUZ11" H 8255 2105 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 8300 2075 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/BUZ11.pdf" H 8050 2150 50  0001 L CNN
+	1    8050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 61AFE0AD
+P 6850 2100
+F 0 "R9" H 6780 2054 50  0000 R CNN
+F 1 "1k" H 6780 2145 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6780 2100 50  0001 C CNN
+F 3 "~" H 6850 2100 50  0001 C CNN
+	1    6850 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 61AFE0B3
+P 7550 1900
+F 0 "R11" H 7480 1854 50  0000 R CNN
+F 1 "1k" H 7480 1945 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7480 1900 50  0001 C CNN
+F 3 "~" H 7550 1900 50  0001 C CNN
+	1    7550 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4007 D3
+U 1 1 61AFE0B9
+P 7950 2850
+F 0 "D3" V 7904 2930 50  0000 L CNN
+F 1 "1N4007" V 7995 2930 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7950 2675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7950 2850 50  0001 C CNN
+	1    7950 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 61AFE0BF
+P 8550 2600
+F 0 "J5" H 8630 2592 50  0000 L CNN
+F 1 "Conn_01x02" H 8630 2501 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 8550 2600 50  0001 C CNN
+F 3 "~" H 8550 2600 50  0001 C CNN
+	1    8550 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 61AFE0C5
+P 7650 3050
+F 0 "#PWR010" H 7650 2800 50  0001 C CNN
+F 1 "GND" H 7655 2877 50  0000 C CNN
+F 2 "" H 7650 3050 50  0001 C CNN
+F 3 "" H 7650 3050 50  0001 C CNN
+	1    7650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR08
+U 1 1 61AFE0CB
+P 7550 1400
+F 0 "#PWR08" H 7550 1250 50  0001 C CNN
+F 1 "+12V" H 7565 1573 50  0000 C CNN
+F 2 "" H 7550 1400 50  0001 C CNN
+F 3 "" H 7550 1400 50  0001 C CNN
+	1    7550 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2700 8350 3050
+Wire Wire Line
+	7950 3000 7950 3050
+Connection ~ 7950 3050
+Wire Wire Line
+	7950 2700 7950 2600
+Wire Wire Line
+	7550 3050 7650 3050
+Connection ~ 7650 3050
+$Comp
+L Transistor_BJT:2N3904 Q9
+U 1 1 61AFE0D8
+P 7450 2400
+F 0 "Q9" H 7640 2446 50  0000 L CNN
+F 1 "2N3904" H 7640 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7650 2325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 7450 2400 50  0001 L CNN
+	1    7450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 61AFE0DE
+P 6350 2600
+F 0 "R7" V 6557 2600 50  0000 C CNN
+F 1 "10k" V 6466 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6280 2600 50  0001 C CNN
+F 3 "~" H 6350 2600 50  0001 C CNN
+	1    6350 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q7
+U 1 1 61AFE0E4
+P 6750 2600
+F 0 "Q7" H 6940 2646 50  0000 L CNN
+F 1 "2N3904" H 6940 2555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6950 2525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 6750 2600 50  0001 L CNN
+	1    6750 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3050 7650 3050
+Text GLabel 6100 2600 0    50   Input ~ 0
+IN3
+Wire Wire Line
+	6100 2600 6200 2600
+Wire Wire Line
+	6500 2600 6550 2600
+Wire Wire Line
+	7850 2150 7550 2150
+Wire Wire Line
+	7550 2150 7550 2200
+Wire Wire Line
+	6850 2250 6850 2400
+Connection ~ 6850 2400
+Wire Wire Line
+	7950 2600 8150 2600
+Wire Wire Line
+	6850 2800 6850 3050
+Wire Wire Line
+	6850 3050 7550 3050
+Connection ~ 7550 3050
+Wire Wire Line
+	7550 2600 7550 3050
+Wire Wire Line
+	8150 2600 8150 2350
+Connection ~ 8150 2600
+Wire Wire Line
+	8150 2600 8350 2600
+Wire Wire Line
+	6850 2400 7250 2400
+Wire Wire Line
+	6850 1650 7550 1650
+Wire Wire Line
+	7550 1650 7550 1750
+Wire Wire Line
+	6850 1650 6850 1950
+Connection ~ 7550 1650
+Wire Wire Line
+	7550 2050 7550 2150
+Connection ~ 7550 2150
+Wire Wire Line
+	7550 1650 8150 1650
+Wire Wire Line
+	8150 1650 8150 1950
+Wire Wire Line
+	7550 1400 7550 1650
+$Comp
+L Transistor_FET:BUZ11 Q12
+U 1 1 61AFE10C
+P 8100 4300
+F 0 "Q12" H 8305 4346 50  0000 L CNN
+F 1 "BUZ11" H 8305 4255 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 8350 4225 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/BUZ11.pdf" H 8100 4300 50  0001 L CNN
+	1    8100 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 61AFE112
+P 6900 4250
+F 0 "R10" H 6830 4204 50  0000 R CNN
+F 1 "1k" H 6830 4295 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6830 4250 50  0001 C CNN
+F 3 "~" H 6900 4250 50  0001 C CNN
+	1    6900 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 61AFE118
+P 7600 4050
+F 0 "R12" H 7530 4004 50  0000 R CNN
+F 1 "1k" H 7530 4095 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7530 4050 50  0001 C CNN
+F 3 "~" H 7600 4050 50  0001 C CNN
+	1    7600 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4007 D4
+U 1 1 61AFE11E
+P 8000 5000
+F 0 "D4" V 7954 5080 50  0000 L CNN
+F 1 "1N4007" V 8045 5080 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8000 4825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8000 5000 50  0001 C CNN
+	1    8000 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 61AFE124
+P 8600 4750
+F 0 "J6" H 8680 4742 50  0000 L CNN
+F 1 "Conn_01x02" H 8680 4651 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 8600 4750 50  0001 C CNN
+F 3 "~" H 8600 4750 50  0001 C CNN
+	1    8600 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 61AFE12A
+P 7700 5200
+F 0 "#PWR011" H 7700 4950 50  0001 C CNN
+F 1 "GND" H 7705 5027 50  0000 C CNN
+F 2 "" H 7700 5200 50  0001 C CNN
+F 3 "" H 7700 5200 50  0001 C CNN
+	1    7700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR09
+U 1 1 61AFE130
+P 7600 3550
+F 0 "#PWR09" H 7600 3400 50  0001 C CNN
+F 1 "+12V" H 7615 3723 50  0000 C CNN
+F 2 "" H 7600 3550 50  0001 C CNN
+F 3 "" H 7600 3550 50  0001 C CNN
+	1    7600 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4850 8400 5200
+Wire Wire Line
+	8000 5150 8000 5200
+Connection ~ 8000 5200
+Wire Wire Line
+	8000 4850 8000 4750
+Wire Wire Line
+	7600 5200 7700 5200
+Connection ~ 7700 5200
+$Comp
+L Transistor_BJT:2N3904 Q10
+U 1 1 61AFE13D
+P 7500 4550
+F 0 "Q10" H 7690 4596 50  0000 L CNN
+F 1 "2N3904" H 7690 4505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7700 4475 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 7500 4550 50  0001 L CNN
+	1    7500 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 61AFE143
+P 6400 4750
+F 0 "R8" V 6607 4750 50  0000 C CNN
+F 1 "10k" V 6516 4750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6330 4750 50  0001 C CNN
+F 3 "~" H 6400 4750 50  0001 C CNN
+	1    6400 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q8
+U 1 1 61AFE149
+P 6800 4750
+F 0 "Q8" H 6990 4796 50  0000 L CNN
+F 1 "2N3904" H 6990 4705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7000 4675 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 6800 4750 50  0001 L CNN
+	1    6800 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 5200 7700 5200
+Text GLabel 6150 4750 0    50   Input ~ 0
+IN4
+Wire Wire Line
+	6150 4750 6250 4750
+Wire Wire Line
+	6550 4750 6600 4750
+Wire Wire Line
+	7900 4300 7600 4300
+Wire Wire Line
+	7600 4300 7600 4350
+Wire Wire Line
+	6900 4400 6900 4550
+Connection ~ 6900 4550
+Wire Wire Line
+	8000 4750 8200 4750
+Wire Wire Line
+	6900 4950 6900 5200
+Wire Wire Line
+	6900 5200 7600 5200
+Connection ~ 7600 5200
+Wire Wire Line
+	7600 4750 7600 5200
+Wire Wire Line
+	8200 4750 8200 4500
+Connection ~ 8200 4750
+Wire Wire Line
+	8200 4750 8400 4750
+Wire Wire Line
+	6900 4550 7300 4550
+Wire Wire Line
+	6900 3800 7600 3800
+Wire Wire Line
+	7600 3800 7600 3900
+Wire Wire Line
+	6900 3800 6900 4100
+Connection ~ 7600 3800
+Wire Wire Line
+	7600 4200 7600 4300
+Connection ~ 7600 4300
+Wire Wire Line
+	7600 3800 8200 3800
+Wire Wire Line
+	8200 3800 8200 4100
+Wire Wire Line
+	7600 3550 7600 3800
+Wire Wire Line
+	7950 3050 8350 3050
+Wire Wire Line
+	8000 5200 8400 5200
+Wire Wire Line
+	4650 5200 5050 5200
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 61B286C5
+P 1550 2450
+F 0 "#FLG0101" H 1550 2525 50  0001 C CNN
+F 1 "PWR_FLAG" H 1550 2623 50  0000 C CNN
+F 2 "" H 1550 2450 50  0001 C CNN
+F 3 "~" H 1550 2450 50  0001 C CNN
+	1    1550 2450
+	-1   0    0    1   
+$EndComp
+Connection ~ 1550 2450
+Wire Wire Line
+	4650 3050 5050 3050
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61B2EB17
+P 2300 6500
+F 0 "H1" H 2400 6546 50  0000 L CNN
+F 1 "MountingHole" H 2400 6455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 2300 6500 50  0001 C CNN
+F 3 "~" H 2300 6500 50  0001 C CNN
+	1    2300 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61B3078A
+P 2300 6700
+F 0 "H2" H 2400 6746 50  0000 L CNN
+F 1 "MountingHole" H 2400 6655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 2300 6700 50  0001 C CNN
+F 3 "~" H 2300 6700 50  0001 C CNN
+	1    2300 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 61B31145
+P 2300 6900
+F 0 "H3" H 2400 6946 50  0000 L CNN
+F 1 "MountingHole" H 2400 6855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 2300 6900 50  0001 C CNN
+F 3 "~" H 2300 6900 50  0001 C CNN
+	1    2300 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 61B319D6
+P 2300 7100
+F 0 "H4" H 2400 7146 50  0000 L CNN
+F 1 "MountingHole" H 2400 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 2300 7100 50  0001 C CNN
+F 3 "~" H 2300 7100 50  0001 C CNN
+	1    2300 7100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
